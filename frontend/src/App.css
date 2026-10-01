@@ -1,0 +1,135 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #2c3e50;
+  padding: 16px 32px;
+}
+
+.navbar-brand {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.main-content {
+  flex: 1;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+/* Course list page */
+.course-list-page h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  color: #2c3e50;
+}
+
+.page-subtitle {
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* Course card */
+.course-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.course-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.course-category {
+  display: inline-block;
+  background-color: #e8f0fe;
+  color: #1a73e8;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  width: fit-content;
+}
+
+.course-title {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.course-summary {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 14px;
+  flex: 1;
+}
+
+.course-link {
+  color: #1a73e8;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Course theory page */
+.course-theory-page {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 30px;
+  border: 1px solid #e0e0e0;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #1a73e8;
+  font-weight: 600;
+}
+
+.course-theory-page h1 {
+  margin: 10px 0 20px;
+  color: #2c3e50;
+}
+
+.theory-content {
+  white-space: pre-wrap;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+  background-color: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+/* Status text */
+.status-text {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 40px;
+}
+
+.error-text {
+  color: #c0392b;
+}
